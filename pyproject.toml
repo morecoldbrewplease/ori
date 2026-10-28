@@ -1,0 +1,24 @@
+[project]
+name = "ori"
+version = "0.1.0"
+description = "Student productivity web app"
+readme = "README.md"
+authors = [
+    { name = "morecoldbrewplease", email = "trungtt129.w@gmail.com" }
+]
+requires-python = ">=3.13"
+dependencies = [
+    "django>=6.1.2",
+    "python-dotenv>=1.2.4",
+]
+
+[dependency-groups]
+dev = [
+    "pre-commit>=4.7.0",
+]
+
+[tool.uv]
+package = false
+
+[tool.ruff.lint.per-file-ignores]
+"**/migrations/*" = ["RUF012"]
